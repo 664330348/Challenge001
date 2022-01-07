@@ -1,0 +1,62 @@
+.DisplayBox{
+    width:80%;
+    border:1px solid;
+    min-width: 400px;
+    max-width: 800px;
+}
+.DisplayTop{
+    display:flex;
+    justify-content: space-between;
+}
+.DisplayTitle{
+    padding-left:3%;
+}
+.DisplayDate{
+    display:flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-bottom: 8px;
+    padding-right:3%;
+}
+.DisplayDate div{
+    font-weight: bold;
+    font-size:large;
+}
+
+.DisplayDescript{
+    padding: 0px 2%;
+}
+.DisplayDescript p{
+    text-align: left;
+    font-size: large;
+}
+
+.DisplayBox img{
+    width:90%;
+    margin-bottom:5px;
+}
+
+.DisplayBot{
+    display:flex;
+    flex-direction:row;
+    justify-content: end;
+    border-top: 1px solid;
+}
+
+
+.likeDefult{
+    width:50px;
+    height: 50px;
+    background-color:cornflowerblue;
+}
+.imgbox{
+    width:30px;
+    height:30px;
+    margin: 5px;
+    cursor:pointer;
+}
+.image{
+    margin:0;
+    width:30px;
+    height:30px;
+}
