@@ -13,8 +13,7 @@
 }
 .DisplayDate{
     display:flex;
-    flex-direction: column;
-    justify-content: end;
+    flex-direction: column-reverse;
     padding-bottom: 8px;
     padding-right:3%;
 }
@@ -38,8 +37,7 @@
 
 .DisplayBot{
     display:flex;
-    flex-direction:row;
-    justify-content: end;
+    flex-direction:row-reverse;
     border-top: 1px solid;
 }
 

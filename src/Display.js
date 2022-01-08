@@ -33,6 +33,20 @@ function Display({title,date,description,imgUrl,images}) {
             <img alt="" src={imgUrl} ></img>
             
             <div className="DisplayBot">
+                {unlikeState === null || likeState===true? (
+                    <>
+                    <div className="imgbox" onClick={() => {Click("unlike")}}> 
+                        <img className="image" alt={title} src={images[1]}/>
+                    </div>
+                    </>
+                ):(
+                    <>
+                    <div className="imgbox" onClick={() => {Click("unlike")}}> 
+                        <img className="image" alt={title} src={images[3]}/>
+                    </div>
+                    </>
+                )} 
+
                 {likeState === null || unlikeState===true? (
                     <>
                     <div className="imgbox" onClick={() => {Click("like")}}> 
@@ -46,20 +60,6 @@ function Display({title,date,description,imgUrl,images}) {
                     </div>
                     </>
                 )}
-
-                {unlikeState === null || likeState===true? (
-                    <>
-                    <div className="imgbox" onClick={() => {Click("unlike")}}> 
-                        <img className="image" alt={title} src={images[1]}/>
-                    </div>
-                    </>
-                ):(
-                    <>
-                    <div className="imgbox" onClick={() => {Click("unlike")}}> 
-                        <img className="image" alt={title} src={images[3]}/>
-                    </div>
-                    </>
-                )}  
             </div>
     
         </div>
